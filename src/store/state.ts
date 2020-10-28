@@ -1,5 +1,3 @@
-import src from "*.bmp"
-
 export interface ProductItem {
     id: string,
     name: string,
