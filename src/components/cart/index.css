@@ -1,76 +1,102 @@
-.total-align {
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-}
-
 table {
-    text-align: center;
+    border-spacing: 1;
     border-collapse: collapse;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-tr:hover {
-    background-color: #f5f5f5;
-}
-
-.cart-button {
-    padding: 5px 15px;
-    border: none;
-    background-color: lightgrey;
-    outline: none;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-.cart-button:hover {
-    background-color: black;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 70rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+  }
+  table * {
+    position: relative;
+  }
+  table td, table th {
+    padding-left: 8px;
+  }
+  table thead tr {
+    height: 60px;
+    background: #1c262b;
     color: white;
-}
-
-.div-cen-empty {
+    font-size: 16px;
+  }
+  table tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #E3F1D5;
+  }
+  table tbody tr:last-child {
+    border: 0;
+  }
+  table td, table th {
+    text-align: left;
+  }
+  table td.l, table th.l {
+    text-align: right;
+  }
+  table td.c, table th.c {
     text-align: center;
-    /* margin-top: 220px; */
-}
-
-.div-cen-empty h1 {
-    color: #424242;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-}
-
-.div-cen-empty button {
-    cursor: pointer;
-    background: transparent;
-    height: 30px;
-    width: 100px;
-    border: 2px solid black;
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: black;
-    text-decoration: black !important;
-}
-
-@media(max-width:500px) {
-    .img-table {
-        height: 50px;
-        width: 50px;
-    }
+  }
+  table td.r, table th.r {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 35.5em) {
     table {
-        width: 30%;
+      display: block;
     }
-    td, th {
-        padding: 4px;
+    table > *, table tr, table td, table th {
+      display: block;
     }
-}
+    table thead {
+      display: none;
+    }
+    table tbody tr {
+      height: auto;
+      padding: 8px 0;
+    }
+    table tbody tr td {
+      padding-left: 45%;
+      margin-bottom: 12px;
+    }
+    table tbody tr td:last-child {
+      margin-bottom: 0;
+    }
+    table tbody tr td:before {
+      position: absolute;
+      font-weight: 700;
+      width: 40%;
+      left: 10px;
+      top: 0;
+    }
+    table tbody tr td:nth-child(1):before {
+      content: "Code";
+    }
+    table tbody tr td:nth-child(2):before {
+      content: "Stock";
+    }
+    table tbody tr td:nth-child(3):before {
+      content: "Cap";
+    }
+    table tbody tr td:nth-child(4):before {
+      content: "Inch";
+    }
+    table tbody tr td:nth-child(5):before {
+      content: "Box Type";
+    }
+  }
+  .cart-button {
+      border: none;
+      padding: 5px 10px;
+      margin: 5px;
+  }
+  .cart-button:hover {
+      color: white;
+  }
+  .total {
+      text-align: center;
+  }
+  .table-shop {
+    padding-bottom: 90px;
+  }
